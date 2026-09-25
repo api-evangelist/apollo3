@@ -1,23 +1,81 @@
 aid: apollo3
+
 name: Apollo3
-description: 'Apollo3 is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://ambiq.com/wp-content/uploads/2023/09/ambiq-visual.jpg
+
+description: 'Apollo3 is a technology company focused on developing advanced microcontroller platforms and IoT solutions. Founded to accelerate embedded innovation, Apollo3 offers hardware, firmware, and cloud services that enable developers to build low-power, high-performance applications across industries such as automotive, industrial automation, and consumer electronics. The company emphasizes open-source tools, comprehensive documentation, and robust SDKs to streamline product development cycles.'
+
 url: https://raw.githubusercontent.com/api-evangelist/apollo3/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
 - Company
-apis: []
+- IoT
+- Embedded
+- Microcontroller
+- LowPower
+- EdgeAI
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Vendors
+  url: vendors/apollo3-vendors.yml
+- type: LLMsTxt
+  url: llms/apollo3-llms.txt
+- type: WellKnown
+  url: well-known/apollo3-well-known.yml
+- type: Hosts
+  url: hosts/apollo3-hosts.yml
+- type: TermsOfService
+  url: https://ambiq.com/legal-notices/
+- type: Support
+  url: https://ambiq.com/support/
+- type: SDKs
+  url: https://ambiq.com/ai/sdk
+- type: PrivacyPolicy
+  url: https://ambiq.com/privacy-policy/
+- type: Newsroom
+  url: https://ambiq.com/news/
+- type: Login
+  url: https://contentportal.ambiq.com/login
+- type: Blog
+  url: https://ambiq.com/blog/
+- type: DomainSecurity
+  url: security/apollo3-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/apollo3
+  url: https://ambiq.com
+
+apis: []
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
